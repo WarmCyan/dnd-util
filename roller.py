@@ -35,8 +35,9 @@ def removePlayer(name):
 def clearTemp():
     print("Removing temporary players...")
     global players
-    for player in players:
-        if player["temp"]: players.remove(player)
+    #for player in players:
+        #if player["temp"]: players.remove(player)
+    players = [player for player in players if not player["temp"]]
     print("Removed!")
     save()
 
@@ -48,6 +49,10 @@ def rollForEach():
         print(str(player["name"]) + " rolled a " + str(roll) + "...")
         player["roll"] = roll
         player["total"] = roll + player["dex"] + player["other"]
+
+        # handle crit 
+        if roll == 20:
+            player["total"] += 100
 
     sort()
     listRolls()
