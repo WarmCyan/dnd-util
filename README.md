@@ -73,6 +73,14 @@ Sorted!
 Saving...
 Saved!
 
+Roller> list
+
+        1. dudet - roll: 20 - total: 121
+        2. dude - roll: 15 - total: 17
+        3. enemy1 - roll: 5 - total: 5
+        4. enemy2 - roll: 4 - total: 4
+
+
 Roller> clear
 Removing temporary players...
 Removed!
