@@ -3,25 +3,6 @@ import random
 import traceback
 
 
-class player:
-    def __init__(self, name, dex, other=0):
-        self.name = name
-        self.dex = dex
-        self.other = other
-        self.roll = -1
-
-    def roll(self):
-        self.roll = random.randint(1,20) + self.dex + self.roll
-
-    def getSaveStuff(self):
-        return {"name": self.name, "dex": self.dex, "other": self.other, "roll": self.roll}
-
-
-
-
-
-
-
 players = []
 
 functionList = []
